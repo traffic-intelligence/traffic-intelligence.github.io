@@ -1,0 +1,136 @@
+:root {
+    --c1: #a8a8a8;
+    --c2: #3CA542;
+    --c3: #a8a8a8;
+    --c4: #a8a8a8;
+    --c5: #3b3b3b;
+    --c6: #A8D277;
+    --c7: #1d1d1d;
+    --c8: #2c2c2a;
+
+    --fs1: 6vw;
+    --fs2: 3vw;
+    --fs3: 1.5vw;
+    --fs4: 2vw;
+    --fs5: 3vw;
+
+    --home-padding: 17vw;
+    --home-padding-L: 12vw;
+}
+
+*{
+    font-family: 'Open Sans', serif;
+    word-break: normal;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+h2{
+    color: var(--c2);
+}
+
+h3{
+    color: var(--c6);
+}
+
+h4{
+    color: white;
+}
+
+.page{
+    padding-left: var(--home-padding);
+    padding-right: var(--home-padding);
+}
+
+.pageL{
+    padding-left: var(--home-padding-L);
+    padding-right: var(--home-padding-L);
+}
+
+.nav{
+    background-color: var(--c7);
+}
+
+.app {
+    background-color: var(--c5);
+    height: 100%;
+}
+
+.head {
+    text-align: center;
+}
+
+.textBlock{
+    text-align: justify;
+    hyphens: auto;
+}
+
+.jobTitle{
+    color: white;
+    font-weight: 500;
+}
+
+p{
+    color: white;
+}
+
+.simulation {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.darkBackground {
+    background-color: var(--c8);
+}
+
+.intersection {
+    flex-grow: 1;
+    text-align: center;
+    width: 40vw;
+    color: var(--c1)
+}
+
+.intersection-canvas {
+    background-color: gray;
+    width: 40vw;
+    height: 40vw;
+}
+
+#imageTextRowStyle{
+    color: var(--c2);
+}
+
+.roundedImage{
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .intersection {
+        width: 90vw;
+    }
+
+    .intersection-canvas {
+        width: 90vw;
+        height: 90vw;
+    }
+    .col, .imageCol{
+        min-width: 90vw;
+    }
+
+    .mainHome{
+        padding: 0;
+    }
+
+    .page, .pageL, .pageS{
+        padding: 0;
+    }
+}
